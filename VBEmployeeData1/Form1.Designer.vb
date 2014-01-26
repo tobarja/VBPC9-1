@@ -30,7 +30,6 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtTelephoneNumber = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtDepartment = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtEmployeeNumber = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -42,11 +41,13 @@ Partial Class Form1
         Me.btnSaveRecord = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.cbxDepartment = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbxDepartment)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtEmailAddress)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -54,7 +55,6 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.txtTelephoneNumber)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.txtDepartment)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtEmployeeNumber)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -128,13 +128,6 @@ Partial Class Form1
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "Department:"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'txtDepartment
-        '
-        Me.txtDepartment.Location = New System.Drawing.Point(155, 163)
-        Me.txtDepartment.Name = "txtDepartment"
-        Me.txtDepartment.Size = New System.Drawing.Size(100, 22)
-        Me.txtDepartment.TabIndex = 10
         '
         'Label4
         '
@@ -227,6 +220,14 @@ Partial Class Form1
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'cbxDepartment
+        '
+        Me.cbxDepartment.FormattingEnabled = True
+        Me.cbxDepartment.Location = New System.Drawing.Point(155, 163)
+        Me.cbxDepartment.Name = "cbxDepartment"
+        Me.cbxDepartment.Size = New System.Drawing.Size(100, 24)
+        Me.cbxDepartment.TabIndex = 17
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -253,7 +254,6 @@ Partial Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtTelephoneNumber As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents txtDepartment As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtEmployeeNumber As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -265,5 +265,6 @@ Partial Class Form1
     Friend WithEvents btnSaveRecord As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents cbxDepartment As System.Windows.Forms.ComboBox
 
 End Class
