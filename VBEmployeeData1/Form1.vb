@@ -1,4 +1,7 @@
-﻿Imports System.IO
+﻿' Andrew Thompson
+' 01/26/2014
+' PC 9-1
+Imports System.IO
 
 Public Class Form1
     Dim DataFile As StreamWriter
