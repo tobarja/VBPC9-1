@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbxDepartment = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtEmailAddress = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -41,7 +42,6 @@ Partial Class Form1
         Me.btnSaveRecord = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.cbxDepartment = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,6 +72,16 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Enter Employee Data"
         '
+        'cbxDepartment
+        '
+        Me.cbxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxDepartment.FormattingEnabled = True
+        Me.cbxDepartment.Items.AddRange(New Object() {"Accounting", "Administration", "Marketing", "MIS", "Sales"})
+        Me.cbxDepartment.Location = New System.Drawing.Point(155, 163)
+        Me.cbxDepartment.Name = "cbxDepartment"
+        Me.cbxDepartment.Size = New System.Drawing.Size(100, 24)
+        Me.cbxDepartment.TabIndex = 4
+        '
         'Label5
         '
         Me.Label5.Location = New System.Drawing.Point(19, 268)
@@ -86,7 +96,7 @@ Partial Class Form1
         Me.txtEmailAddress.Location = New System.Drawing.Point(155, 265)
         Me.txtEmailAddress.Name = "txtEmailAddress"
         Me.txtEmailAddress.Size = New System.Drawing.Size(100, 22)
-        Me.txtEmailAddress.TabIndex = 16
+        Me.txtEmailAddress.TabIndex = 7
         '
         'Label6
         '
@@ -102,7 +112,7 @@ Partial Class Form1
         Me.txtTelephoneExtension.Location = New System.Drawing.Point(155, 231)
         Me.txtTelephoneExtension.Name = "txtTelephoneExtension"
         Me.txtTelephoneExtension.Size = New System.Drawing.Size(100, 22)
-        Me.txtTelephoneExtension.TabIndex = 14
+        Me.txtTelephoneExtension.TabIndex = 6
         '
         'Label7
         '
@@ -118,7 +128,7 @@ Partial Class Form1
         Me.txtTelephoneNumber.Location = New System.Drawing.Point(155, 197)
         Me.txtTelephoneNumber.Name = "txtTelephoneNumber"
         Me.txtTelephoneNumber.Size = New System.Drawing.Size(100, 22)
-        Me.txtTelephoneNumber.TabIndex = 12
+        Me.txtTelephoneNumber.TabIndex = 5
         '
         'Label8
         '
@@ -143,7 +153,7 @@ Partial Class Form1
         Me.txtEmployeeNumber.Location = New System.Drawing.Point(155, 129)
         Me.txtEmployeeNumber.Name = "txtEmployeeNumber"
         Me.txtEmployeeNumber.Size = New System.Drawing.Size(100, 22)
-        Me.txtEmployeeNumber.TabIndex = 8
+        Me.txtEmployeeNumber.TabIndex = 3
         '
         'Label3
         '
@@ -159,7 +169,7 @@ Partial Class Form1
         Me.txtLastName.Location = New System.Drawing.Point(155, 95)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(100, 22)
-        Me.txtLastName.TabIndex = 6
+        Me.txtLastName.TabIndex = 2
         '
         'Label2
         '
@@ -175,7 +185,7 @@ Partial Class Form1
         Me.txtMiddleName.Location = New System.Drawing.Point(155, 61)
         Me.txtMiddleName.Name = "txtMiddleName"
         Me.txtMiddleName.Size = New System.Drawing.Size(100, 22)
-        Me.txtMiddleName.TabIndex = 4
+        Me.txtMiddleName.TabIndex = 1
         '
         'Label1
         '
@@ -191,7 +201,7 @@ Partial Class Form1
         Me.txtFirstName.Location = New System.Drawing.Point(155, 27)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(100, 22)
-        Me.txtFirstName.TabIndex = 2
+        Me.txtFirstName.TabIndex = 0
         '
         'btnSaveRecord
         '
@@ -219,14 +229,6 @@ Partial Class Form1
         Me.btnExit.TabIndex = 3
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'cbxDepartment
-        '
-        Me.cbxDepartment.FormattingEnabled = True
-        Me.cbxDepartment.Location = New System.Drawing.Point(155, 163)
-        Me.cbxDepartment.Name = "cbxDepartment"
-        Me.cbxDepartment.Size = New System.Drawing.Size(100, 24)
-        Me.cbxDepartment.TabIndex = 17
         '
         'Form1
         '
